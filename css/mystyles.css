@@ -1,0 +1,65 @@
+.jumbotron{
+  margin-top: 40px;
+  background-image: url('../images/header-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-shadow: 0 0 10px black;
+  overflow: hidden;
+}
+
+.jumbotron img{
+  width: 200px;
+  border: 4px solid white;
+}
+
+.jumbotron img, .jumbotron h1, .jumbotron p{
+  transform: translate(0px, -100px);
+  opacity: 0;
+  transition: 1s;
+}
+
+section hr{
+  width: 200px;
+  border: 2px solid #888;
+}
+
+section.about{
+  min-height: 600px;
+  overflow:hidden;
+}
+
+.about div.text-center div:first-child{
+  transform: translate(100px,0px) rotate(-30deg);
+  opacity: 0;
+  transition: 1s;
+}
+.about div.text-center div:last-child{
+  transform: translate(-100px,0px) rotate(30deg);
+  opacity: 0;
+  transition: 1s;
+}
+
+section.fortpolio{
+  background-color: #eaeaea;
+  min-height: 900px;
+}
+
+.fortpolio .thumbnail{
+  transform: translate(0px, -100px);
+  transition: 1s;
+  opacity: 0;
+}
+
+section.contact{
+  min-height: 700px;
+}
+.container .row:first-child{
+  margin-bottom: 20px;
+}
+
+footer{
+  background-color: #191919;
+  color: white;
+  padding: 15px 0px;
+}
